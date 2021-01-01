@@ -7,7 +7,5 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-public @interface ColumnAttributes {
-    public ColumnType type();
-    public int length() default 0;
+public @interface NotNull {
 }
