@@ -64,7 +64,6 @@ public class MySQLDatabase {
                     next = true;
                 }
             sql.append(")");
-            System.out.println(sql.toString());
             connection.createStatement().execute(sql.toString());
         } catch (SQLException exception) {
             throw new MySQLException("Exception occurred while parsing Class " + layout.getName()  + " to a TableLayout!\nException: " + exception.toString());
